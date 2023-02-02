@@ -31,7 +31,7 @@ DROP TABLE IF EXISTS `projet_amina`.`ateliers` ;
 
 CREATE TABLE IF NOT EXISTS `projet_amina`.`ateliers` (
   `idateliers` INT NOT NULL AUTO_INCREMENT,
-  `nom` VARCHAR(50) NOT NULL,
+  `name` VARCHAR(50) NOT NULL,
   `image` VARCHAR(250) NOT NULL,
   `description` VARCHAR(250) NOT NULL,
   `durée` VARCHAR(45) NOT NULL,
@@ -71,7 +71,7 @@ VALUES("Smith", "Susan", "dessin", "assets/images/susan_smith.jpg"),
 ("Lesley", "Collier", "danse classique", "assets/images/lesley-collier.jpg"),
 ("Manoukian", "André", "piano", "assets/images/andre-manoukian.jpg");
 
-INSERT INTO ateliers (nom, image, description, durée, Enseignants_idEnseignants, tarif)
+INSERT INTO ateliers (name, image, description, durée, Enseignants_idEnseignants, tarif)
 VALUES("Dessin", "assets/images/dessin.jpg", "Le dessin n’est pas un don mais peut s’apprendre. Nous vous proposons un vaste choix de cours pour que vous puissiez trouver la technique qui vous convient avec le professeur qui vous correspond .", "2heures", 1, 30),
 ("Peinture", "assets/images/peinture.jpg", "Ces cours sont ouverts aux débutants comme aux personnes voulant parfaire leurs acquis, la peinture contemporaine laissera une plus grande place à l’expression personnelle .", "3heures", 2, 50),
 ("Danse classique", "assets/images/dance.jpg", "La danse classique est une technique rigoureuse qui commence à partir de 8 ans, la source creaative propose une approche douce et adaptée en fonction des capacités de chacun, les bienfaits sont nombreux quelque soit l'âge !", "1heure", 3, 35),
