@@ -10,11 +10,10 @@ class AtelierManager extends AbstractManager {
       `select * from  ${this.table} INNER JOIN enseignants ON ateliers.Enseignants_idEnseignants=enseignants.idenseignants`
     );
   }
-  
 
   find(id) {
     return this.connection.query(
-      `select * from  ${this.table} where idateliers= ?`,
+      `select * from  ${this.table} INNER JOIN enseignants ON ateliers.Enseignants_idEnseignants=enseignants.idenseignants where idateliers= ?`,
       [id]
     );
   }

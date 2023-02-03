@@ -4,7 +4,6 @@ const browse = (req, res) => {
   models.ateliers
     .findAll()
     .then(([rows]) => {
-      console.log(rows)
       res.send(rows);
     })
     .catch((err) => {
