@@ -17,7 +17,6 @@ function Ateliers() {
         {atelier.map((atel, index) => (
           <CardAtelier atel={atel} index={index} />
         ))}
-        ;
       </div>
     </div>
   );
