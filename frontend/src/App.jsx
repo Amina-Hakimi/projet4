@@ -5,6 +5,7 @@ import Ateliers from "@pages/Ateliers";
 import OneAtelier from "@pages/OneAtelier";
 import Accueil from "@pages/Accueil";
 import Login from "@pages/Login";
+import Contact from "@pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/ateliers" element={<Ateliers />} />
           <Route path="/ateliers/:id" element={<OneAtelier />} />
           <Route path="/accueil" element={<Accueil />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
