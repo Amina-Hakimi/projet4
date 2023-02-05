@@ -6,6 +6,7 @@ import OneAtelier from "@pages/OneAtelier";
 import Accueil from "@pages/Accueil";
 import Login from "@pages/Login";
 import Contact from "@pages/Contact";
+import Admnistration from "@pages/Admnistration";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/ateliers/:id" element={<OneAtelier />} />
           <Route path="/accueil" element={<Accueil />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/barcelonne" element={<Admnistration />} />
         </Routes>
       </div>
     </Router>
