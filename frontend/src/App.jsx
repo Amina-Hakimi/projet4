@@ -3,6 +3,7 @@ import Navbar from "@components/Navbar";
 import "./App.css";
 import Ateliers from "@pages/Ateliers";
 import OneAtelier from "@pages/OneAtelier";
+import Accueil from "@pages/Accueil";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/ateliers" element={<Ateliers />} />
           <Route path="/ateliers/:id" element={<OneAtelier />} />
+          <Route path="/accueil" element={<Accueil />} />
         </Routes>
       </div>
     </Router>
