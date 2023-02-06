@@ -24,16 +24,24 @@ function OneAtelier() {
               alt={`${import.meta.env.VITE_BACKEND_URL}/${oneAtelier.name}`}
             />
           </div>
-          <p className="my-6 mx-3 text-lg font-semibold leading-9">
+          <h1 className="my-5 mx-3 text-lg text-pink-500 font-bold ">
+            Atelier {oneAtelier.name}
+          </h1>
+          <p className="my-6 mx-3 text-md font-semibold leading-9">
             {oneAtelier.description}
+            <br />
           </p>
-          <p className="mx-3 text-lg leading-9 font-semibold">
+          <p className="mx-3 text-md font-semibold leading-9 font-semibold">
             Notre cours à une durée de {oneAtelier.durée}
+            <span>.</span>
           </p>
-          <p className="mx-3 text-lg leading-9 font-semibold">
+          <p className="mx-3 text-md font-semibold leading-9">
             {" "}
-            Ce cours est dispensé par notre professeur <br />{" "}
+            Ce cours est dispensé par notre professeur <br /> <span>
+              "
+            </span>{" "}
             {oneAtelier.prenom} {oneAtelier.nom}
+            <span>" .</span>
           </p>
         </div>
       )}
