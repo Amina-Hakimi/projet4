@@ -1,17 +1,6 @@
-import React, { useState} from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import React from "react";
 
 function Modify() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const [atelier, setAtelier] = useState({
-          name: "",
-          image: "",
-          description: "",
-          durée: "",
-          Enseignants_idEnseignants: "",
-          tarif: "",
-  });
   return (
     <div className="my-12 py-5 mx-5">
       <form className="w-full max-w-sm my-5">
@@ -48,7 +37,7 @@ function Modify() {
               required
               className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
               id="image"
-              type="image"
+              type="text"
               placeholder="image"
             />
           </div>
@@ -108,8 +97,8 @@ function Modify() {
           <div className="md:w-1/3" />
           <div className="md:w-2/3">
             <button
-              className="shadow bg-pink-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-              type="button my-5"
+              className="shadow bg-pink-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded my-5"
+              type="button"
             >
               Modifier
             </button>
