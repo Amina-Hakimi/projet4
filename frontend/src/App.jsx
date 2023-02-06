@@ -7,6 +7,7 @@ import Accueil from "@pages/Accueil";
 import Login from "@pages/Login";
 import Contact from "@pages/Contact";
 import Admnistration from "@pages/Admnistration";
+import Modify from "@pages/Modify";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/accueil" element={<Accueil />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/barcelonne" element={<Admnistration />} />
+          <Route path="/modify" element={<Modify />} />
         </Routes>
       </div>
     </Router>
