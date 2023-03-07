@@ -71,6 +71,18 @@ function Contact() {
           </div>
         </div>
       </section>
+      <div className="flex justify-center">
+        <iframe
+          width="700"
+          height="440"
+          title="géolocalisation"
+          src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=source%20creative+(Source%20creative)&amp;ie=UTF8&amp;t=&amp;z=9&amp;iwloc=B&amp;output=embed"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+        />
+      </div>
     </div>
   );
 }
