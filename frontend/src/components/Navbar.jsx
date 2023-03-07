@@ -11,8 +11,8 @@ function Navbar() {
     setOpen(!open);
   };
   return (
-    <div className="w-full fixed top-0 left-0">
-      <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
+    <div className="w-full">
+      <div className="md:flex items-center justify-between py-2 md:px-10 px-7">
         <div className="cursor-pointer z-1">
           <Link to="/accueil">
             <img src={logo} alt="logo" width="70" height="70" />
@@ -47,27 +47,27 @@ function Navbar() {
           }`}
         >
           <Link to="/accueil">
-            <li className="md:ml-8 text-inherit font-medium text-xl md:my-0 my-5 md:hover:bg-pink-200 transition-all px-3 rounded py-2">
+            <li className="md:ml-8 text-inherit font-medium text-lg md:my-0 my-5 md:hover:text-pink-600 transition-all px-3 rounded py-1">
               Accueil
             </li>
           </Link>
           <Link to="/ateliers">
-            <li className="md:ml-8 text-inherit font-medium text-xl md:my-0 my-5 md:hover:bg-pink-200 transition-all px-3 rounded py-2">
+            <li className="md:ml-8 text-inherit font-medium text-lg md:my-0 my-5 md:hover:text-pink-600 transition-all px-3 rounded py-2">
               Ateliers
             </li>
           </Link>
           <Link to="/tarifs">
-            <li className="md:ml-8 text-inherit font-medium text-xl md:my-0 my-5 md:hover:bg-pink-200 transition-all px-3 rounded py-2">
+            <li className="md:ml-8 text-inherit font-medium text-lg md:my-0 my-5 md:hover:text-pink-600 transition-all px-3 rounded py-2">
               Tarifs
             </li>
           </Link>
           <Link to="/réservation">
-            <li className="md:ml-8 text-inherit font-medium text-xl md:my-0 my-5 md:hover:bg-pink-200 transition-all px-3 rounded py-2">
+            <li className="md:ml-8 text-inherit font-medium text-lg md:my-0 my-5 md:hover:text-pink-600 transition-all px-3 rounded py-2">
               Réservation
             </li>
           </Link>
           <Link to="/Contact">
-            <li className="md:ml-8 text-inherit font-medium text-xl md:hover:bg-pink-200 transition-all px-3 rounded py-2">
+            <li className="md:ml-8 text-inherit font-medium text-lg md:hover:text-pink-600 transition-all px-3 rounded py-2">
               Contact
             </li>
           </Link>
