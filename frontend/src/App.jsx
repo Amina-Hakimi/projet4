@@ -8,11 +8,13 @@ import Login from "@pages/Login";
 import Contact from "@pages/Contact";
 import Admnistration from "@pages/Admnistration";
 import Modify from "@pages/Modify";
+import Header from "@components/Header";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
         <Navbar />
         <Routes>
           <Route path="/" element={<Login />} />
