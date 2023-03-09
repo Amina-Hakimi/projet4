@@ -1,3 +1,4 @@
+import Questions from "@components/Questions";
 import React from "react";
 
 function Contact() {
@@ -83,6 +84,7 @@ function Contact() {
           marginWidth="0"
         />
       </div>
+      <Questions />
     </div>
   );
 }
